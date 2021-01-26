@@ -1,6 +1,6 @@
 # Desafio Softplan Backend
 ### Para rodar o projeto via docker basta rodar o comando
-    docker run -p 8080:8080 leoxsouza/pessoas:1.0
+    docker run -p 8080:8080 leoxsouza/pessoas:1.2
 
 ### Assim ficará disponível o endpoint público:
     GET: localhost:8080/source
