@@ -27,7 +27,7 @@ public class PessoaResource {
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Pessoa> cadastrar(@RequestBody @Valid Pessoa pessoa) throws Exception {
         log.info("Request para cadastrar ou editar uma Pessoa: {}", pessoa.toString());
-        return new ResponseEntity<>(pessoaService.cadastrar(pessoa), HttpStatus.OK);
+        return new ResponseEntity<>(pessoaService.cadastrar(pessoa), HttpStatus.CREATED);
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
